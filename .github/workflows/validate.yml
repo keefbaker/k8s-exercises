@@ -10,4 +10,4 @@ jobs:
       - name: validate manifests
         uses: instrumenta/kubeval-action@master
         with:
-          files: "1 - Basic pod","2 - Deployment","3 - Service"
+          files: 1 - Basic pod,2 - Deployment,3 - Service
