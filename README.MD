@@ -7,3 +7,9 @@ To start, create your namespace by running
 ```
 kubectl create namespace <your-name>
 ```
+
+Then set that to the one you're going to use by typing 
+
+```
+kubectl config set-context --current --namespace=<your-name>
+```

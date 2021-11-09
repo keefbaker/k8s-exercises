@@ -6,8 +6,6 @@ Pretty much everything in k8s is written in yaml.
 
 # Exercise
 
-change the *namespace* field on the pod to your name.
-
 Apply the pod using:
 
 ```
@@ -17,12 +15,12 @@ kubectl apply -f basic-pod.yml
 to check how it's doing run
 
 ```
-kubectl get pods -n <your-name>
+kubectl get pods 
 ```
 To see it working run:
 
 ```
-kubectl port-forward nginx 8080:80 -n <your-name>
+kubectl port-forward nginx 8080:80 
 ```
 
 Then in your browser go to http://127.0.0.1:8080
