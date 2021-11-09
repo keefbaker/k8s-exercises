@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: validate manifests in dir1 and dir2
-        uses: makocchi-git/actions-k8s-manifests-validate-kubeval@master
+      - name: validate manifests
+        uses: instrumenta/kubeval-action@master
