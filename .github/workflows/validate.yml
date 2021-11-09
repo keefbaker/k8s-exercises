@@ -9,3 +9,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: validate manifests
         uses: instrumenta/kubeval-action@master
+        with:
+          files: "1 - Basic pod","2 - Deployment","3 - Service"
