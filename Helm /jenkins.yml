@@ -1,0 +1,16 @@
+persistence:
+  enabled: true
+controller:
+  nodeSelector:
+    kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+  servicePort: 80
+  serviceType: LoadBalancer
+  serviceAnnotations:
+    service.beta.kubernetes.io/load-balancer-source-ranges: "10.0.0.0/8"
+    service.beta.kubernetes.io/aws-load-balancer-internal: "True"
+    external-dns.alpha.kubernetes.io/hostname: "YOURNAME.DOMAIN"
+  installPlugins:
+    - ec2
+    - kubernetes
+    - s3

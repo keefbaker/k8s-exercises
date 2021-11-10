@@ -17,6 +17,13 @@ to check how it's doing run
 ```
 kubectl get pods 
 ```
+
+Let's check the logs:
+
+```
+kubectl logs nginx
+```
+
 To see it working run:
 
 ```
