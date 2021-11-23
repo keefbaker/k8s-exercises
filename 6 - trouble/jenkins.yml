@@ -1,0 +1,13 @@
+persistence:
+  enabled: true
+controller:
+  nodeSelector:
+    kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+  servicePort: 80
+  serviceType: ClusterIP
+  installPlugins:
+    - ec2
+    - kubernetes
+    - s3
+    - dogmeat

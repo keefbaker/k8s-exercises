@@ -20,6 +20,7 @@ helm show values jenkins/jenkins > values.yml
 Then open the value file and skim through it to see what's possible
 
 Now open jenkins.yml and change YOURNAME.DOMAIN to <yourname>.<the domain i sent in chat>
+And change image to the image I sent in chat
 
 Let's install it
 
